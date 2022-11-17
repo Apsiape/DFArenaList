@@ -39,16 +39,67 @@ function canPassivInterrupt(unitID)
         kickpassiv = 1
 
     -- Shaman
-
+    elseif Action.Unit(unitID):IsCastingRemains(77472) > 0 then --Healing Wave
+    kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(8004) > 0 then --Healing Surge
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(1064) > 0 then --Chain Heal
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(73920) > 0 then --Healing Rain
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(197995) > 0 then --Wellspring
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(207778) > 0 then --Downpour
+        kickpassiv = 1
 
     -- Paladin
-
+    elseif Action.Unit(unitID):IsCastingRemains(19750) > 0 then --Flash of Light
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(82326) > 0 then --Holy Light
+        kickpassiv = 1
 
     -- Monk
-
+    elseif Action.Unit(unitID):IsCastingRemains(115175) > 0 then --Soothing Mist	
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(116670) > 0 then --Vivify
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(124682) > 0 then --Enveloping Mist
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(191837) > 0 then --Essence Font
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(227344) > 0 then --Surging Mist
+        kickpassiv = 1
 
     --Important
-
+    elseif Action.Unit(unitID):IsCastingRemains(113724) > 0 then --Ring of Frost
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(118) > 0 then --Polymorph
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(605) > 0 then --Mind Control
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(982) > 0 then --Revive pet
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(5782) > 0 then --Fear
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(20066) > 0 then --Repitance
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(51514) > 0 then --Hex
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(33786) > 0 then --Cyclone
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(32375) > 0 then --Mass Dispel		
+        kickpassiv = 1		
+    elseif Action.Unit(unitID):IsCastingRemains(12051) > 0 then --Evocation
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(20484) > 0 then --Rebirth
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(258925) > 0 then --Fel Barrage
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(198013) > 0 then --Eye Beam
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(339) > 0 then --Roots
+        kickpassiv = 1
+    end
 
 	if kickpassiv == 1 then 
         return true 
