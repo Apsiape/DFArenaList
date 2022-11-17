@@ -40,7 +40,7 @@ function canPassivInterrupt(unitID)
     elseif Action.Unit(unitID):IsCastingRemains(214621) > 0 then --Shicsm (not sure about this one yet)
         kickpassiv = 1
     
-	-- Druid
+    -- Druid
     elseif Action.Unit(unitID):IsCastingRemains(8936) > 0 then --Regrowth
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(289022) > 0 then --Nourish
@@ -84,7 +84,7 @@ function canPassivInterrupt(unitID)
     elseif Action.Unit(unitID):IsCastingRemains(227344) > 0 then --Surging Mist
         kickpassiv = 1
 		
-	-- Evoker
+    -- Evoker
     elseif Action.Unit(unitID):IsCastingRemains(376788) > 0 then --Dream Breath
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(367226) > 0 then --Spiritbloom
@@ -92,15 +92,15 @@ function canPassivInterrupt(unitID)
     elseif Action.Unit(unitID):IsCastingRemains(361469) > 0 then --Living Flame
         kickpassiv = 1
 
-	-- Hunter
+    -- Hunter
     elseif Action.Unit(unitID):IsCastingRemains(982) > 0 then --Revive pet
         kickpassiv = 1
 		
-	-- Demon Hunter
+    -- Demon Hunter
     elseif Action.Unit(unitID):IsCastingRemains(198013) > 0 then --Eye Beam
         kickpassiv = 1
 
-	-- Mage
+    -- Mage
     elseif Action.Unit(unitID):IsCastingRemains(113724) > 0 then --Ring of Frost
         kickpassiv = 1
 
