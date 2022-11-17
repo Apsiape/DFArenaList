@@ -1,0 +1,58 @@
+------------------------------------
+--- Function to Interrupt passiv in arena
+------------------------------------
+function canPassivInterrupt(unitID)
+    local kickpassiv = 0
+
+    -- Priest
+    if Action.Unit(unitID):IsCastingRemains(47540) > 0 then --Penance
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(194509) > 0 then --Power Word: Radiance
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(186263) > 0 then --Shadow Mend
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(2060) > 0 then --Heal
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(2061) > 0 then --Flash Heal
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(289666) > 0 then --Greater Heal
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(596) > 0 then --Prayer of Healing
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(120517) > 0 then --Halo
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(64843) > 0 then --Divine Hymn
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(265202) > 0 then --Holy Word: Salvation
+        kickpassiv = 1
+
+    -- Druid
+    elseif Action.Unit(unitID):IsCastingRemains(8936) > 0 then --Regrowth
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(289022) > 0 then --Nourish
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(48438) > 0 then --Wild Growth
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(323764) > 0 then --Convoke
+        kickpassiv = 1
+    elseif Action.Unit(unitID):IsCastingRemains(740) > 0 then --Tranquility
+        kickpassiv = 1
+
+    -- Shaman
+
+
+    -- Paladin
+
+
+    -- Monk
+
+
+    --Important
+
+
+	if kickpassiv == 1 then 
+        return true 
+    else 
+        return false 
+    end
+end
