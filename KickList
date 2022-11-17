@@ -15,9 +15,9 @@ function canPassivInterrupt(unitID)
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(33786) > 0 then --Cyclone
         kickpassiv = 1
-	elseif Action.Unit(unitID):IsCastingRemains(323673) > 0 then --Mindgames
+    elseif Action.Unit(unitID):IsCastingRemains(323673) > 0 then --Mindgames
         kickpassiv = 1
-	elseif Action.Unit(unitID):IsCastingRemains(323701) > 0 then --Mindgames
+    elseif Action.Unit(unitID):IsCastingRemains(323701) > 0 then --Mindgames
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(605) > 0 then --Mind Control
         kickpassiv = 1
@@ -103,7 +103,6 @@ function canPassivInterrupt(unitID)
 	-- Demon Hunter
     elseif Action.Unit(unitID):IsCastingRemains(198013) > 0 then --Eye Beam
         kickpassiv = 1
-    end
 	
 	-- Mage
     elseif Action.Unit(unitID):IsCastingRemains(113724) > 0 then --Ring of Frost
