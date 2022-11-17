@@ -99,8 +99,7 @@ function canPassivInterrupt(unitID)
 	-- Demon Hunter
     elseif Action.Unit(unitID):IsCastingRemains(198013) > 0 then --Eye Beam
         kickpassiv = 1
-    end
-	
+
 	-- Mage
     elseif Action.Unit(unitID):IsCastingRemains(113724) > 0 then --Ring of Frost
         kickpassiv = 1
