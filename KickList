@@ -5,7 +5,7 @@ function canPassivInterrupt(unitID)
     local kickpassiv = 0
 
     --Important (Kick First)
-    If Action.Unit(unitID):IsCastingRemains(118) > 0 then --Polymorph
+    if Action.Unit(unitID):IsCastingRemains(118) > 0 then --Polymorph
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(5782) > 0 then --Fear
         kickpassiv = 1
