@@ -1,0 +1,39 @@
+--- Function to Purge passiv in arena
+------------------------------------
+function canPassivPurge(unitID)
+    local purgepassiv = 0
+
+    if Action.AuraIsValid(unitID, "UsePurge", "PurgeHigh") then
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(10060) then --Power Infusion
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(1022) then --Blessing of Protection
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(79206) then --Spiritwalkers Grace
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(190319) then --Combustion
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(12042) then --Arcane Power
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(12472) then --Icy Veins
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(467) then --Thorns 
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(29166) then --Innervate  
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(254419) then --Riptide
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(974) then --Earthshield
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(358267) then --Hover
+        purgepassiv = 1
+    elseif Action.Unit(unitID):IsBuffUp(378464) then --Nullifying Shroud
+        purgepassiv = 1
+    end
+
+    if purgepassiv == 1 then 
+        return true 
+    else 
+        return false 
+    end
+end
