@@ -56,7 +56,7 @@ function canPassivInterrupt(unitID)
 		
     -- Shaman
     elseif Action.Unit(unitID):IsCastingRemains(77472) > 0 then --Healing Wave
-    kickpassiv = 1
+    	kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(8004) > 0 then --Healing Surge
         kickpassiv = 1
     elseif Action.Unit(unitID):IsCastingRemains(1064) > 0 then --Chain Heal
@@ -109,10 +109,10 @@ function canPassivInterrupt(unitID)
         kickpassiv = 1
 	
 	-- Warlock
-	elseif Action.Unit(unitID):IsCastingRemains(234153) > 0 then --Drain Life
+    elseif Action.Unit(unitID):IsCastingRemains(234153) > 0 then --Drain Life
         kickpassiv = 1
 
-	if kickpassiv == 1 then 
+    if kickpassiv == 1 then 
         return true 
     else 
         return false 
