@@ -80,6 +80,12 @@ PoisonDispelTable = {
     
 }
 
+--Mass Dispel
+MassDispelTable = {
+    --Pvp
+    33786,
+}
+
 --Important Pve Purges
 ImportantPurgeTable = {
     328288,327332,317936,326046,344739,355888,373744,
