@@ -11,16 +11,47 @@ MagicDispelTable = {
     --Pve
     328664,323347,324293,329110,322410,328180,323137,328756,322557,325224,321968,324859,339237,325701,326607,326632,325725,340026,332605,332707,325885,321038,327481,323636,338731,322818,317963,327648,328331,317661,319626,333708,349954, 164192, 227568, 227832, 229159, 229083, 230002, 228837, 228526, 228576, 228277, 229706, 229716, 228252, 29928, 238606, 229705, 164504, 172771, 3355, 51485, 355732, 347283, 350713, 350541,350469,357298,351117,364522,360687,365297,364031,360148,360241,369439,365903,365175,366701,349954,346844,353835,358131,356031,355915,356324,357029,355641,357281,351960,373429,373509,373391,
     --Pvp
-    339, --entangling roots
-    187650, --freezing trap
+    --Disorients
+    605, --mind control
+    8122, --psychic scream
+    205369, --mind bomb
+    115750, --blinding light
+    5782, --fear
+    5484, --howl of terror
+    6358, --seduction
+    198898, --song of chi-ji
+    
+    --Incapacitates
+    2637, --hibernate
+    217832, --imprison
     118, --polymorph
+    113724, --ring of frost
+    187650, --freezing trap
+    20066, --repentance
+    
+    --Silences
+    47476, --strangulate
+    
+    --Roots
+    339, --entangling roots
+    122, --frost nova
+    102359, --mass entanglement
+    33395, --freeze
+    109248, --binding shot
+    51485, --earthgrab totem
+    262303, --surge of power
+    
+    --Stuns
+    853, --hammer of justice
+    179057, --chaos Nova
+    64044, --psychic horror
+    200199, --censure
+    
+    --Other
     323673, --mindgames old
     323701, --mindgames new
-    115750, --blinding light
-    8122, --psychic scream
-    122, --frost nova
-    853, --hammer o
-    
+    80240, --havoc
+    325640, --soul rot
 }
 
 --Curse Dispel
@@ -28,6 +59,7 @@ CurseDispelTable = {
     --Pve
     319603,319611,325876,334493,334496,328494,326836,336277,319669,323831,330725,333299,356407,300436,29930,230297,228241,
     --Pvp
+    --Incapacitates
     211015, --Hex
 
 }
